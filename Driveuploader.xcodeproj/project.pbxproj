@@ -1,0 +1,599 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		39C9CED82CD9855600F3D04D /* DriveuploaderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C9CED72CD9855600F3D04D /* DriveuploaderApp.swift */; };
+		39C9CEDA2CD9855600F3D04D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C9CED92CD9855600F3D04D /* ContentView.swift */; };
+		39C9CEDC2CD9855600F3D04D /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C9CEDB2CD9855600F3D04D /* Item.swift */; };
+		39C9CEDE2CD9855900F3D04D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39C9CEDD2CD9855900F3D04D /* Assets.xcassets */; };
+		39C9CEE12CD9855900F3D04D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39C9CEE02CD9855900F3D04D /* Preview Assets.xcassets */; };
+		39C9CEED2CD9855900F3D04D /* DriveuploaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C9CEEC2CD9855900F3D04D /* DriveuploaderTests.swift */; };
+		39C9CEF72CD9855900F3D04D /* DriveuploaderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C9CEF62CD9855900F3D04D /* DriveuploaderUITests.swift */; };
+		39C9CEF92CD9855900F3D04D /* DriveuploaderUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C9CEF82CD9855900F3D04D /* DriveuploaderUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		39C9CEE92CD9855900F3D04D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 39C9CECC2CD9855600F3D04D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 39C9CED32CD9855600F3D04D;
+			remoteInfo = Driveuploader;
+		};
+		39C9CEF32CD9855900F3D04D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 39C9CECC2CD9855600F3D04D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 39C9CED32CD9855600F3D04D;
+			remoteInfo = Driveuploader;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		39C9CED42CD9855600F3D04D /* Driveuploader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Driveuploader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		39C9CED72CD9855600F3D04D /* DriveuploaderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriveuploaderApp.swift; sourceTree = "<group>"; };
+		39C9CED92CD9855600F3D04D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		39C9CEDB2CD9855600F3D04D /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		39C9CEDD2CD9855900F3D04D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		39C9CEE02CD9855900F3D04D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		39C9CEE22CD9855900F3D04D /* Driveuploader.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Driveuploader.entitlements; sourceTree = "<group>"; };
+		39C9CEE32CD9855900F3D04D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39C9CEE82CD9855900F3D04D /* DriveuploaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DriveuploaderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		39C9CEEC2CD9855900F3D04D /* DriveuploaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriveuploaderTests.swift; sourceTree = "<group>"; };
+		39C9CEF22CD9855900F3D04D /* DriveuploaderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DriveuploaderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		39C9CEF62CD9855900F3D04D /* DriveuploaderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriveuploaderUITests.swift; sourceTree = "<group>"; };
+		39C9CEF82CD9855900F3D04D /* DriveuploaderUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriveuploaderUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		39C9CED12CD9855600F3D04D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39C9CEE52CD9855900F3D04D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39C9CEEF2CD9855900F3D04D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		39C9CECB2CD9855600F3D04D = {
+			isa = PBXGroup;
+			children = (
+				39C9CED62CD9855600F3D04D /* Driveuploader */,
+				39C9CEEB2CD9855900F3D04D /* DriveuploaderTests */,
+				39C9CEF52CD9855900F3D04D /* DriveuploaderUITests */,
+				39C9CED52CD9855600F3D04D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		39C9CED52CD9855600F3D04D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				39C9CED42CD9855600F3D04D /* Driveuploader.app */,
+				39C9CEE82CD9855900F3D04D /* DriveuploaderTests.xctest */,
+				39C9CEF22CD9855900F3D04D /* DriveuploaderUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		39C9CED62CD9855600F3D04D /* Driveuploader */ = {
+			isa = PBXGroup;
+			children = (
+				39C9CED72CD9855600F3D04D /* DriveuploaderApp.swift */,
+				39C9CED92CD9855600F3D04D /* ContentView.swift */,
+				39C9CEDB2CD9855600F3D04D /* Item.swift */,
+				39C9CEDD2CD9855900F3D04D /* Assets.xcassets */,
+				39C9CEE22CD9855900F3D04D /* Driveuploader.entitlements */,
+				39C9CEE32CD9855900F3D04D /* Info.plist */,
+				39C9CEDF2CD9855900F3D04D /* Preview Content */,
+			);
+			path = Driveuploader;
+			sourceTree = "<group>";
+		};
+		39C9CEDF2CD9855900F3D04D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				39C9CEE02CD9855900F3D04D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		39C9CEEB2CD9855900F3D04D /* DriveuploaderTests */ = {
+			isa = PBXGroup;
+			children = (
+				39C9CEEC2CD9855900F3D04D /* DriveuploaderTests.swift */,
+			);
+			path = DriveuploaderTests;
+			sourceTree = "<group>";
+		};
+		39C9CEF52CD9855900F3D04D /* DriveuploaderUITests */ = {
+			isa = PBXGroup;
+			children = (
+				39C9CEF62CD9855900F3D04D /* DriveuploaderUITests.swift */,
+				39C9CEF82CD9855900F3D04D /* DriveuploaderUITestsLaunchTests.swift */,
+			);
+			path = DriveuploaderUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		39C9CED32CD9855600F3D04D /* Driveuploader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 39C9CEFC2CD9855900F3D04D /* Build configuration list for PBXNativeTarget "Driveuploader" */;
+			buildPhases = (
+				39C9CED02CD9855600F3D04D /* Sources */,
+				39C9CED12CD9855600F3D04D /* Frameworks */,
+				39C9CED22CD9855600F3D04D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Driveuploader;
+			productName = Driveuploader;
+			productReference = 39C9CED42CD9855600F3D04D /* Driveuploader.app */;
+			productType = "com.apple.product-type.application";
+		};
+		39C9CEE72CD9855900F3D04D /* DriveuploaderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 39C9CEFF2CD9855900F3D04D /* Build configuration list for PBXNativeTarget "DriveuploaderTests" */;
+			buildPhases = (
+				39C9CEE42CD9855900F3D04D /* Sources */,
+				39C9CEE52CD9855900F3D04D /* Frameworks */,
+				39C9CEE62CD9855900F3D04D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				39C9CEEA2CD9855900F3D04D /* PBXTargetDependency */,
+			);
+			name = DriveuploaderTests;
+			productName = DriveuploaderTests;
+			productReference = 39C9CEE82CD9855900F3D04D /* DriveuploaderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		39C9CEF12CD9855900F3D04D /* DriveuploaderUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 39C9CF022CD9855900F3D04D /* Build configuration list for PBXNativeTarget "DriveuploaderUITests" */;
+			buildPhases = (
+				39C9CEEE2CD9855900F3D04D /* Sources */,
+				39C9CEEF2CD9855900F3D04D /* Frameworks */,
+				39C9CEF02CD9855900F3D04D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				39C9CEF42CD9855900F3D04D /* PBXTargetDependency */,
+			);
+			name = DriveuploaderUITests;
+			productName = DriveuploaderUITests;
+			productReference = 39C9CEF22CD9855900F3D04D /* DriveuploaderUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		39C9CECC2CD9855600F3D04D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					39C9CED32CD9855600F3D04D = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					39C9CEE72CD9855900F3D04D = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 39C9CED32CD9855600F3D04D;
+					};
+					39C9CEF12CD9855900F3D04D = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 39C9CED32CD9855600F3D04D;
+					};
+				};
+			};
+			buildConfigurationList = 39C9CECF2CD9855600F3D04D /* Build configuration list for PBXProject "Driveuploader" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 39C9CECB2CD9855600F3D04D;
+			productRefGroup = 39C9CED52CD9855600F3D04D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				39C9CED32CD9855600F3D04D /* Driveuploader */,
+				39C9CEE72CD9855900F3D04D /* DriveuploaderTests */,
+				39C9CEF12CD9855900F3D04D /* DriveuploaderUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		39C9CED22CD9855600F3D04D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39C9CEE12CD9855900F3D04D /* Preview Assets.xcassets in Resources */,
+				39C9CEDE2CD9855900F3D04D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39C9CEE62CD9855900F3D04D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39C9CEF02CD9855900F3D04D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		39C9CED02CD9855600F3D04D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39C9CEDA2CD9855600F3D04D /* ContentView.swift in Sources */,
+				39C9CEDC2CD9855600F3D04D /* Item.swift in Sources */,
+				39C9CED82CD9855600F3D04D /* DriveuploaderApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39C9CEE42CD9855900F3D04D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39C9CEED2CD9855900F3D04D /* DriveuploaderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39C9CEEE2CD9855900F3D04D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39C9CEF72CD9855900F3D04D /* DriveuploaderUITests.swift in Sources */,
+				39C9CEF92CD9855900F3D04D /* DriveuploaderUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		39C9CEEA2CD9855900F3D04D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 39C9CED32CD9855600F3D04D /* Driveuploader */;
+			targetProxy = 39C9CEE92CD9855900F3D04D /* PBXContainerItemProxy */;
+		};
+		39C9CEF42CD9855900F3D04D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 39C9CED32CD9855600F3D04D /* Driveuploader */;
+			targetProxy = 39C9CEF32CD9855900F3D04D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		39C9CEFA2CD9855900F3D04D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		39C9CEFB2CD9855900F3D04D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		39C9CEFD2CD9855900F3D04D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Driveuploader/Driveuploader.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Driveuploader/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Driveuploader/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = hh.Driveuploader;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		39C9CEFE2CD9855900F3D04D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Driveuploader/Driveuploader.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Driveuploader/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Driveuploader/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = hh.Driveuploader;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		39C9CF002CD9855900F3D04D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = hh.DriveuploaderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Driveuploader.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Driveuploader";
+			};
+			name = Debug;
+		};
+		39C9CF012CD9855900F3D04D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = hh.DriveuploaderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Driveuploader.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Driveuploader";
+			};
+			name = Release;
+		};
+		39C9CF032CD9855900F3D04D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = hh.DriveuploaderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Driveuploader;
+			};
+			name = Debug;
+		};
+		39C9CF042CD9855900F3D04D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = hh.DriveuploaderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Driveuploader;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		39C9CECF2CD9855600F3D04D /* Build configuration list for PBXProject "Driveuploader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39C9CEFA2CD9855900F3D04D /* Debug */,
+				39C9CEFB2CD9855900F3D04D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		39C9CEFC2CD9855900F3D04D /* Build configuration list for PBXNativeTarget "Driveuploader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39C9CEFD2CD9855900F3D04D /* Debug */,
+				39C9CEFE2CD9855900F3D04D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		39C9CEFF2CD9855900F3D04D /* Build configuration list for PBXNativeTarget "DriveuploaderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39C9CF002CD9855900F3D04D /* Debug */,
+				39C9CF012CD9855900F3D04D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		39C9CF022CD9855900F3D04D /* Build configuration list for PBXNativeTarget "DriveuploaderUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39C9CF032CD9855900F3D04D /* Debug */,
+				39C9CF042CD9855900F3D04D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 39C9CECC2CD9855600F3D04D /* Project object */;
+}
