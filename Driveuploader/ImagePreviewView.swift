@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  ImagePreviewView.swift
 //  Driveuploader
 //
 //  Created by Swopnil Panday on 11/4/24.
