@@ -21,6 +21,9 @@
 		39C9CF112CD9890600F3D04D /* SelectionCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C9CF102CD9890600F3D04D /* SelectionCard.swift */; };
 		39C9CF132CD9892500F3D04D /* ActionButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C9CF122CD9892500F3D04D /* ActionButtonsView.swift */; };
 		39C9CF152CD9893800F3D04D /* ImagePreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C9CF142CD9893800F3D04D /* ImagePreviewView.swift */; };
+		39CD40E72CD9AA3A007CA5E9 /* FolderStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CD40E62CD9AA3A007CA5E9 /* FolderStatsView.swift */; };
+		39CD40E92CDAE8C5007CA5E9 /* UploadQueueManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CD40E82CDAE8C4007CA5E9 /* UploadQueueManager.swift */; };
+		39CD40EB2CDB1F46007CA5E9 /* PathConstructor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CD40EA2CDB1F46007CA5E9 /* PathConstructor.swift */; };
 		39D8EF652CD999B700A0C556 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D8EF642CD999B700A0C556 /* ContentView.swift */; };
 		39D8EF672CD99A4800A0C556 /* SignInButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D8EF662CD99A4800A0C556 /* SignInButton.swift */; };
 		39D8EF692CD99A6E00A0C556 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D8EF682CD99A6E00A0C556 /* LoginView.swift */; };
@@ -33,7 +36,31 @@
 		39E0FB182CD99CF70024756A /* GoogleAPIClientForREST_APIManagement in Frameworks */ = {isa = PBXBuildFile; productRef = 39E0FB172CD99CF60024756A /* GoogleAPIClientForREST_APIManagement */; };
 		39E85D4B2CD99F85006222FA /* GoogleAPIClientForRESTCore in Frameworks */ = {isa = PBXBuildFile; productRef = 39E85D4A2CD99F85006222FA /* GoogleAPIClientForRESTCore */; };
 		39E85D4D2CD99F85006222FA /* GoogleAPIClientForREST_ACMEDNS in Frameworks */ = {isa = PBXBuildFile; productRef = 39E85D4C2CD99F85006222FA /* GoogleAPIClientForREST_ACMEDNS */; };
-		C0C3E2DD11D19CF32F29C54A /* Pods_Driveuploader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C74897478CD7C8D697A5A9E /* Pods_Driveuploader.framework */; };
+		39E85D4F2CD9A2EC006222FA /* GoogleAPIClientForREST_AbusiveExperienceReport in Frameworks */ = {isa = PBXBuildFile; productRef = 39E85D4E2CD9A2EC006222FA /* GoogleAPIClientForREST_AbusiveExperienceReport */; };
+		39E85D512CD9A2EC006222FA /* GoogleAPIClientForREST_Acceleratedmobilepageurl in Frameworks */ = {isa = PBXBuildFile; productRef = 39E85D502CD9A2EC006222FA /* GoogleAPIClientForREST_Acceleratedmobilepageurl */; };
+		39E85D532CD9A2EC006222FA /* GoogleAPIClientForREST_AccessApproval in Frameworks */ = {isa = PBXBuildFile; productRef = 39E85D522CD9A2EC006222FA /* GoogleAPIClientForREST_AccessApproval */; };
+		39E85D552CD9A2EC006222FA /* GoogleAPIClientForREST_AccessContextManager in Frameworks */ = {isa = PBXBuildFile; productRef = 39E85D542CD9A2EC006222FA /* GoogleAPIClientForREST_AccessContextManager */; };
+		39E85D572CD9A2EC006222FA /* GoogleAPIClientForREST_AdExchangeBuyerII in Frameworks */ = {isa = PBXBuildFile; productRef = 39E85D562CD9A2EC006222FA /* GoogleAPIClientForREST_AdExchangeBuyerII */; };
+		39E85D592CD9A2EC006222FA /* GoogleAPIClientForREST_AdExperienceReport in Frameworks */ = {isa = PBXBuildFile; productRef = 39E85D582CD9A2EC006222FA /* GoogleAPIClientForREST_AdExperienceReport */; };
+		39E85D5B2CD9A2EC006222FA /* GoogleAPIClientForREST_AdMob in Frameworks */ = {isa = PBXBuildFile; productRef = 39E85D5A2CD9A2EC006222FA /* GoogleAPIClientForREST_AdMob */; };
+		39E85D5D2CD9A2EC006222FA /* GoogleAPIClientForREST_AdSenseHost in Frameworks */ = {isa = PBXBuildFile; productRef = 39E85D5C2CD9A2EC006222FA /* GoogleAPIClientForREST_AdSenseHost */; };
+		39E85D5F2CD9A2EC006222FA /* GoogleAPIClientForREST_AdSensePlatform in Frameworks */ = {isa = PBXBuildFile; productRef = 39E85D5E2CD9A2EC006222FA /* GoogleAPIClientForREST_AdSensePlatform */; };
+		39E85D612CD9A2EC006222FA /* GoogleAPIClientForREST_AddressValidation in Frameworks */ = {isa = PBXBuildFile; productRef = 39E85D602CD9A2EC006222FA /* GoogleAPIClientForREST_AddressValidation */; };
+		39E85D632CD9A2EC006222FA /* GoogleAPIClientForREST_Adsense in Frameworks */ = {isa = PBXBuildFile; productRef = 39E85D622CD9A2EC006222FA /* GoogleAPIClientForREST_Adsense */; };
+		39E85D652CD9A2EC006222FA /* GoogleAPIClientForREST_Advisorynotifications in Frameworks */ = {isa = PBXBuildFile; productRef = 39E85D642CD9A2EC006222FA /* GoogleAPIClientForREST_Advisorynotifications */; };
+		39E85D672CD9A2EC006222FA /* GoogleAPIClientForREST_Aiplatform in Frameworks */ = {isa = PBXBuildFile; productRef = 39E85D662CD9A2EC006222FA /* GoogleAPIClientForREST_Aiplatform */; };
+		39E85D692CD9A2EC006222FA /* GoogleAPIClientForREST_AirQuality in Frameworks */ = {isa = PBXBuildFile; productRef = 39E85D682CD9A2EC006222FA /* GoogleAPIClientForREST_AirQuality */; };
+		39E85D6B2CD9A2EC006222FA /* GoogleAPIClientForREST_AlertCenter in Frameworks */ = {isa = PBXBuildFile; productRef = 39E85D6A2CD9A2EC006222FA /* GoogleAPIClientForREST_AlertCenter */; };
+		39E85D6D2CD9A2EC006222FA /* GoogleAPIClientForREST_Analytics in Frameworks */ = {isa = PBXBuildFile; productRef = 39E85D6C2CD9A2EC006222FA /* GoogleAPIClientForREST_Analytics */; };
+		39E85D6F2CD9A2EC006222FA /* GoogleAPIClientForREST_AnalyticsData in Frameworks */ = {isa = PBXBuildFile; productRef = 39E85D6E2CD9A2EC006222FA /* GoogleAPIClientForREST_AnalyticsData */; };
+		39E85D712CD9A2EC006222FA /* GoogleAPIClientForREST_AnalyticsHub in Frameworks */ = {isa = PBXBuildFile; productRef = 39E85D702CD9A2EC006222FA /* GoogleAPIClientForREST_AnalyticsHub */; };
+		39E85D732CD9A2EC006222FA /* GoogleAPIClientForREST_AnalyticsReporting in Frameworks */ = {isa = PBXBuildFile; productRef = 39E85D722CD9A2EC006222FA /* GoogleAPIClientForREST_AnalyticsReporting */; };
+		39E85D752CD9A2EC006222FA /* GoogleAPIClientForREST_AndroidEnterprise in Frameworks */ = {isa = PBXBuildFile; productRef = 39E85D742CD9A2EC006222FA /* GoogleAPIClientForREST_AndroidEnterprise */; };
+		39E85D772CD9A2EC006222FA /* GoogleAPIClientForREST_AndroidManagement in Frameworks */ = {isa = PBXBuildFile; productRef = 39E85D762CD9A2EC006222FA /* GoogleAPIClientForREST_AndroidManagement */; };
+		39E85D792CD9A2EC006222FA /* GoogleAPIClientForREST_AndroidProvisioningPartner in Frameworks */ = {isa = PBXBuildFile; productRef = 39E85D782CD9A2EC006222FA /* GoogleAPIClientForREST_AndroidProvisioningPartner */; };
+		39E85D7B2CD9A2EC006222FA /* GoogleAPIClientForREST_AndroidPublisher in Frameworks */ = {isa = PBXBuildFile; productRef = 39E85D7A2CD9A2EC006222FA /* GoogleAPIClientForREST_AndroidPublisher */; };
+		39E85D7D2CD9A2EC006222FA /* GoogleAPIClientForREST_ApiKeysService in Frameworks */ = {isa = PBXBuildFile; productRef = 39E85D7C2CD9A2EC006222FA /* GoogleAPIClientForREST_ApiKeysService */; };
+		EE3A18909B8E24884019A40C /* Pods_Driveuploader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E13771782AD689A5A94738F /* Pods_Driveuploader.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,12 +100,16 @@
 		39C9CF102CD9890600F3D04D /* SelectionCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionCard.swift; sourceTree = "<group>"; };
 		39C9CF122CD9892500F3D04D /* ActionButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButtonsView.swift; sourceTree = "<group>"; };
 		39C9CF142CD9893800F3D04D /* ImagePreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePreviewView.swift; sourceTree = "<group>"; };
+		39CD40E62CD9AA3A007CA5E9 /* FolderStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderStatsView.swift; sourceTree = "<group>"; };
+		39CD40E82CDAE8C4007CA5E9 /* UploadQueueManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadQueueManager.swift; sourceTree = "<group>"; };
+		39CD40EA2CDB1F46007CA5E9 /* PathConstructor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathConstructor.swift; sourceTree = "<group>"; };
 		39D8EF642CD999B700A0C556 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		39D8EF662CD99A4800A0C556 /* SignInButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInButton.swift; sourceTree = "<group>"; };
 		39D8EF682CD99A6E00A0C556 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
-		833E755D756EAB33F50A93A6 /* Pods-Driveuploader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Driveuploader.release.xcconfig"; path = "Target Support Files/Pods-Driveuploader/Pods-Driveuploader.release.xcconfig"; sourceTree = "<group>"; };
-		8C74897478CD7C8D697A5A9E /* Pods_Driveuploader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Driveuploader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C9CFC1FE53C4A877345AC003 /* Pods-Driveuploader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Driveuploader.debug.xcconfig"; path = "Target Support Files/Pods-Driveuploader/Pods-Driveuploader.debug.xcconfig"; sourceTree = "<group>"; };
+		39F834992CD9A51300364174 /* Driveuploader-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Driveuploader-Bridging-Header.h"; sourceTree = "<group>"; };
+		6E13771782AD689A5A94738F /* Pods_Driveuploader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Driveuploader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BD9E43EB89EE86F8C425CE7 /* Pods-Driveuploader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Driveuploader.debug.xcconfig"; path = "Target Support Files/Pods-Driveuploader/Pods-Driveuploader.debug.xcconfig"; sourceTree = "<group>"; };
+		9A2CD9F257595905E42B7CE6 /* Pods-Driveuploader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Driveuploader.release.xcconfig"; path = "Target Support Files/Pods-Driveuploader/Pods-Driveuploader.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,14 +117,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39E85D632CD9A2EC006222FA /* GoogleAPIClientForREST_Adsense in Frameworks */,
 				39E0FB162CD99CF60024756A /* GoogleAPIClientForREST_APIGateway in Frameworks */,
+				39E85D5D2CD9A2EC006222FA /* GoogleAPIClientForREST_AdSenseHost in Frameworks */,
+				39E85D4F2CD9A2EC006222FA /* GoogleAPIClientForREST_AbusiveExperienceReport in Frameworks */,
+				39E85D572CD9A2EC006222FA /* GoogleAPIClientForREST_AdExchangeBuyerII in Frameworks */,
+				39E85D6B2CD9A2EC006222FA /* GoogleAPIClientForREST_AlertCenter in Frameworks */,
+				39E85D7D2CD9A2EC006222FA /* GoogleAPIClientForREST_ApiKeysService in Frameworks */,
 				39E0FB0E2CD99CB00024756A /* GoogleSignInSwift in Frameworks */,
 				39E0FB142CD99CF60024756A /* GoogleAPIClientForREST_AIPlatformNotebooks in Frameworks */,
 				39E0FB102CD99CF60024756A /* GoogleAPIClientForRESTCore in Frameworks */,
+				39E85D792CD9A2EC006222FA /* GoogleAPIClientForREST_AndroidProvisioningPartner in Frameworks */,
 				39E0FB182CD99CF70024756A /* GoogleAPIClientForREST_APIManagement in Frameworks */,
+				39E85D652CD9A2EC006222FA /* GoogleAPIClientForREST_Advisorynotifications in Frameworks */,
+				39E85D5B2CD9A2EC006222FA /* GoogleAPIClientForREST_AdMob in Frameworks */,
 				39E0FB0C2CD99CB00024756A /* GoogleSignIn in Frameworks */,
+				39E85D732CD9A2EC006222FA /* GoogleAPIClientForREST_AnalyticsReporting in Frameworks */,
+				39E85D772CD9A2EC006222FA /* GoogleAPIClientForREST_AndroidManagement in Frameworks */,
+				39E85D532CD9A2EC006222FA /* GoogleAPIClientForREST_AccessApproval in Frameworks */,
+				39E85D6F2CD9A2EC006222FA /* GoogleAPIClientForREST_AnalyticsData in Frameworks */,
+				39E85D752CD9A2EC006222FA /* GoogleAPIClientForREST_AndroidEnterprise in Frameworks */,
 				39E0FB122CD99CF60024756A /* GoogleAPIClientForREST_ACMEDNS in Frameworks */,
-				C0C3E2DD11D19CF32F29C54A /* Pods_Driveuploader.framework in Frameworks */,
+				39E85D592CD9A2EC006222FA /* GoogleAPIClientForREST_AdExperienceReport in Frameworks */,
+				39E85D5F2CD9A2EC006222FA /* GoogleAPIClientForREST_AdSensePlatform in Frameworks */,
+				39E85D512CD9A2EC006222FA /* GoogleAPIClientForREST_Acceleratedmobilepageurl in Frameworks */,
+				39E85D612CD9A2EC006222FA /* GoogleAPIClientForREST_AddressValidation in Frameworks */,
+				39E85D712CD9A2EC006222FA /* GoogleAPIClientForREST_AnalyticsHub in Frameworks */,
+				39E85D692CD9A2EC006222FA /* GoogleAPIClientForREST_AirQuality in Frameworks */,
+				39E85D6D2CD9A2EC006222FA /* GoogleAPIClientForREST_Analytics in Frameworks */,
+				39E85D7B2CD9A2EC006222FA /* GoogleAPIClientForREST_AndroidPublisher in Frameworks */,
+				39E85D672CD9A2EC006222FA /* GoogleAPIClientForREST_Aiplatform in Frameworks */,
+				39E85D552CD9A2EC006222FA /* GoogleAPIClientForREST_AccessContextManager in Frameworks */,
+				EE3A18909B8E24884019A40C /* Pods_Driveuploader.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,6 +171,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		339730CE005C75C948E2E6F4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6E13771782AD689A5A94738F /* Pods_Driveuploader.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		39C9CECB2CD9855600F3D04D = {
 			isa = PBXGroup;
 			children = (
@@ -124,7 +187,7 @@
 				39C9CEF52CD9855900F3D04D /* DriveuploaderUITests */,
 				39C9CED52CD9855600F3D04D /* Products */,
 				48088084F6EB2A67E279B760 /* Pods */,
-				5DEFEA315BC2E8D0E5600CB9 /* Frameworks */,
+				339730CE005C75C948E2E6F4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -157,6 +220,10 @@
 				39D8EF642CD999B700A0C556 /* ContentView.swift */,
 				39D8EF662CD99A4800A0C556 /* SignInButton.swift */,
 				39D8EF682CD99A6E00A0C556 /* LoginView.swift */,
+				39F834992CD9A51300364174 /* Driveuploader-Bridging-Header.h */,
+				39CD40E62CD9AA3A007CA5E9 /* FolderStatsView.swift */,
+				39CD40E82CDAE8C4007CA5E9 /* UploadQueueManager.swift */,
+				39CD40EA2CDB1F46007CA5E9 /* PathConstructor.swift */,
 			);
 			path = Driveuploader;
 			sourceTree = "<group>";
@@ -189,18 +256,10 @@
 		48088084F6EB2A67E279B760 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				C9CFC1FE53C4A877345AC003 /* Pods-Driveuploader.debug.xcconfig */,
-				833E755D756EAB33F50A93A6 /* Pods-Driveuploader.release.xcconfig */,
+				8BD9E43EB89EE86F8C425CE7 /* Pods-Driveuploader.debug.xcconfig */,
+				9A2CD9F257595905E42B7CE6 /* Pods-Driveuploader.release.xcconfig */,
 			);
 			path = Pods;
-			sourceTree = "<group>";
-		};
-		5DEFEA315BC2E8D0E5600CB9 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				8C74897478CD7C8D697A5A9E /* Pods_Driveuploader.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,11 +269,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 39C9CEFC2CD9855900F3D04D /* Build configuration list for PBXNativeTarget "Driveuploader" */;
 			buildPhases = (
-				DB0333BDA3DE5CF43008C89D /* [CP] Check Pods Manifest.lock */,
+				DA742C3434B5F762C00B450F /* [CP] Check Pods Manifest.lock */,
 				39C9CED02CD9855600F3D04D /* Sources */,
 				39C9CED12CD9855600F3D04D /* Frameworks */,
 				39C9CED22CD9855600F3D04D /* Resources */,
-				23BA9DAFEB3CE57993A2A82F /* [CP] Embed Pods Frameworks */,
+				6B0990DB0B276D7103B52C35 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -229,6 +288,30 @@
 				39E0FB132CD99CF60024756A /* GoogleAPIClientForREST_AIPlatformNotebooks */,
 				39E0FB152CD99CF60024756A /* GoogleAPIClientForREST_APIGateway */,
 				39E0FB172CD99CF60024756A /* GoogleAPIClientForREST_APIManagement */,
+				39E85D4E2CD9A2EC006222FA /* GoogleAPIClientForREST_AbusiveExperienceReport */,
+				39E85D502CD9A2EC006222FA /* GoogleAPIClientForREST_Acceleratedmobilepageurl */,
+				39E85D522CD9A2EC006222FA /* GoogleAPIClientForREST_AccessApproval */,
+				39E85D542CD9A2EC006222FA /* GoogleAPIClientForREST_AccessContextManager */,
+				39E85D562CD9A2EC006222FA /* GoogleAPIClientForREST_AdExchangeBuyerII */,
+				39E85D582CD9A2EC006222FA /* GoogleAPIClientForREST_AdExperienceReport */,
+				39E85D5A2CD9A2EC006222FA /* GoogleAPIClientForREST_AdMob */,
+				39E85D5C2CD9A2EC006222FA /* GoogleAPIClientForREST_AdSenseHost */,
+				39E85D5E2CD9A2EC006222FA /* GoogleAPIClientForREST_AdSensePlatform */,
+				39E85D602CD9A2EC006222FA /* GoogleAPIClientForREST_AddressValidation */,
+				39E85D622CD9A2EC006222FA /* GoogleAPIClientForREST_Adsense */,
+				39E85D642CD9A2EC006222FA /* GoogleAPIClientForREST_Advisorynotifications */,
+				39E85D662CD9A2EC006222FA /* GoogleAPIClientForREST_Aiplatform */,
+				39E85D682CD9A2EC006222FA /* GoogleAPIClientForREST_AirQuality */,
+				39E85D6A2CD9A2EC006222FA /* GoogleAPIClientForREST_AlertCenter */,
+				39E85D6C2CD9A2EC006222FA /* GoogleAPIClientForREST_Analytics */,
+				39E85D6E2CD9A2EC006222FA /* GoogleAPIClientForREST_AnalyticsData */,
+				39E85D702CD9A2EC006222FA /* GoogleAPIClientForREST_AnalyticsHub */,
+				39E85D722CD9A2EC006222FA /* GoogleAPIClientForREST_AnalyticsReporting */,
+				39E85D742CD9A2EC006222FA /* GoogleAPIClientForREST_AndroidEnterprise */,
+				39E85D762CD9A2EC006222FA /* GoogleAPIClientForREST_AndroidManagement */,
+				39E85D782CD9A2EC006222FA /* GoogleAPIClientForREST_AndroidProvisioningPartner */,
+				39E85D7A2CD9A2EC006222FA /* GoogleAPIClientForREST_AndroidPublisher */,
+				39E85D7C2CD9A2EC006222FA /* GoogleAPIClientForREST_ApiKeysService */,
 			);
 			productName = Driveuploader;
 			productReference = 39C9CED42CD9855600F3D04D /* Driveuploader.app */;
@@ -350,7 +433,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		23BA9DAFEB3CE57993A2A82F /* [CP] Embed Pods Frameworks */ = {
+		6B0990DB0B276D7103B52C35 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -367,7 +450,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Driveuploader/Pods-Driveuploader-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		DB0333BDA3DE5CF43008C89D /* [CP] Check Pods Manifest.lock */ = {
+		DA742C3434B5F762C00B450F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -398,13 +481,16 @@
 			files = (
 				39C9CF132CD9892500F3D04D /* ActionButtonsView.swift in Sources */,
 				39D8EF652CD999B700A0C556 /* ContentView.swift in Sources */,
+				39CD40E72CD9AA3A007CA5E9 /* FolderStatsView.swift in Sources */,
 				39C9CF152CD9893800F3D04D /* ImagePreviewView.swift in Sources */,
 				39C9CF0D2CD988DA00F3D04D /* PathCard.swift in Sources */,
+				39CD40EB2CDB1F46007CA5E9 /* PathConstructor.swift in Sources */,
 				39D8EF672CD99A4800A0C556 /* SignInButton.swift in Sources */,
 				39C9CF062CD986DB00F3D04D /* GoogleDriveManager.swift in Sources */,
 				39D8EF692CD99A6E00A0C556 /* LoginView.swift in Sources */,
 				39C9CEDC2CD9855600F3D04D /* Item.swift in Sources */,
 				39C9CF092CD9879100F3D04D /* CameraView.swift in Sources */,
+				39CD40E92CDAE8C5007CA5E9 /* UploadQueueManager.swift in Sources */,
 				39C9CF112CD9890600F3D04D /* SelectionCard.swift in Sources */,
 				39C9CED82CD9855600F3D04D /* DriveuploaderApp.swift in Sources */,
 				39C9CF0F2CD988F000F3D04D /* SelectionView.swift in Sources */,
@@ -565,7 +651,7 @@
 		};
 		39C9CEFD2CD9855900F3D04D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C9CFC1FE53C4A877345AC003 /* Pods-Driveuploader.debug.xcconfig */;
+			baseConfigurationReference = 8BD9E43EB89EE86F8C425CE7 /* Pods-Driveuploader.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -575,6 +661,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Driveuploader/Preview Content\"";
 				DEVELOPMENT_TEAM = 38V66H366K;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Driveuploader/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Need camera access to take photos of currency";
@@ -588,7 +675,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = hh.swopnil.Driveuploader;
+				NEW_SETTING = "";
+				PRODUCT_BUNDLE_IDENTIFIER = hh.Driveuploader;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -598,7 +686,7 @@
 		};
 		39C9CEFE2CD9855900F3D04D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 833E755D756EAB33F50A93A6 /* Pods-Driveuploader.release.xcconfig */;
+			baseConfigurationReference = 9A2CD9F257595905E42B7CE6 /* Pods-Driveuploader.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -608,6 +696,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Driveuploader/Preview Content\"";
 				DEVELOPMENT_TEAM = 38V66H366K;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Driveuploader/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Need camera access to take photos of currency";
@@ -621,7 +710,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = hh.swopnil.Driveuploader;
+				NEW_SETTING = "";
+				PRODUCT_BUNDLE_IDENTIFIER = hh.Driveuploader;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -806,6 +896,126 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 39C9CF1A2CD990BB00F3D04D /* XCRemoteSwiftPackageReference "google-api-objectivec-client-for-rest" */;
 			productName = GoogleAPIClientForREST_ACMEDNS;
+		};
+		39E85D4E2CD9A2EC006222FA /* GoogleAPIClientForREST_AbusiveExperienceReport */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 39C9CF1A2CD990BB00F3D04D /* XCRemoteSwiftPackageReference "google-api-objectivec-client-for-rest" */;
+			productName = GoogleAPIClientForREST_AbusiveExperienceReport;
+		};
+		39E85D502CD9A2EC006222FA /* GoogleAPIClientForREST_Acceleratedmobilepageurl */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 39C9CF1A2CD990BB00F3D04D /* XCRemoteSwiftPackageReference "google-api-objectivec-client-for-rest" */;
+			productName = GoogleAPIClientForREST_Acceleratedmobilepageurl;
+		};
+		39E85D522CD9A2EC006222FA /* GoogleAPIClientForREST_AccessApproval */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 39C9CF1A2CD990BB00F3D04D /* XCRemoteSwiftPackageReference "google-api-objectivec-client-for-rest" */;
+			productName = GoogleAPIClientForREST_AccessApproval;
+		};
+		39E85D542CD9A2EC006222FA /* GoogleAPIClientForREST_AccessContextManager */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 39C9CF1A2CD990BB00F3D04D /* XCRemoteSwiftPackageReference "google-api-objectivec-client-for-rest" */;
+			productName = GoogleAPIClientForREST_AccessContextManager;
+		};
+		39E85D562CD9A2EC006222FA /* GoogleAPIClientForREST_AdExchangeBuyerII */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 39C9CF1A2CD990BB00F3D04D /* XCRemoteSwiftPackageReference "google-api-objectivec-client-for-rest" */;
+			productName = GoogleAPIClientForREST_AdExchangeBuyerII;
+		};
+		39E85D582CD9A2EC006222FA /* GoogleAPIClientForREST_AdExperienceReport */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 39C9CF1A2CD990BB00F3D04D /* XCRemoteSwiftPackageReference "google-api-objectivec-client-for-rest" */;
+			productName = GoogleAPIClientForREST_AdExperienceReport;
+		};
+		39E85D5A2CD9A2EC006222FA /* GoogleAPIClientForREST_AdMob */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 39C9CF1A2CD990BB00F3D04D /* XCRemoteSwiftPackageReference "google-api-objectivec-client-for-rest" */;
+			productName = GoogleAPIClientForREST_AdMob;
+		};
+		39E85D5C2CD9A2EC006222FA /* GoogleAPIClientForREST_AdSenseHost */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 39C9CF1A2CD990BB00F3D04D /* XCRemoteSwiftPackageReference "google-api-objectivec-client-for-rest" */;
+			productName = GoogleAPIClientForREST_AdSenseHost;
+		};
+		39E85D5E2CD9A2EC006222FA /* GoogleAPIClientForREST_AdSensePlatform */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 39C9CF1A2CD990BB00F3D04D /* XCRemoteSwiftPackageReference "google-api-objectivec-client-for-rest" */;
+			productName = GoogleAPIClientForREST_AdSensePlatform;
+		};
+		39E85D602CD9A2EC006222FA /* GoogleAPIClientForREST_AddressValidation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 39C9CF1A2CD990BB00F3D04D /* XCRemoteSwiftPackageReference "google-api-objectivec-client-for-rest" */;
+			productName = GoogleAPIClientForREST_AddressValidation;
+		};
+		39E85D622CD9A2EC006222FA /* GoogleAPIClientForREST_Adsense */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 39C9CF1A2CD990BB00F3D04D /* XCRemoteSwiftPackageReference "google-api-objectivec-client-for-rest" */;
+			productName = GoogleAPIClientForREST_Adsense;
+		};
+		39E85D642CD9A2EC006222FA /* GoogleAPIClientForREST_Advisorynotifications */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 39C9CF1A2CD990BB00F3D04D /* XCRemoteSwiftPackageReference "google-api-objectivec-client-for-rest" */;
+			productName = GoogleAPIClientForREST_Advisorynotifications;
+		};
+		39E85D662CD9A2EC006222FA /* GoogleAPIClientForREST_Aiplatform */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 39C9CF1A2CD990BB00F3D04D /* XCRemoteSwiftPackageReference "google-api-objectivec-client-for-rest" */;
+			productName = GoogleAPIClientForREST_Aiplatform;
+		};
+		39E85D682CD9A2EC006222FA /* GoogleAPIClientForREST_AirQuality */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 39C9CF1A2CD990BB00F3D04D /* XCRemoteSwiftPackageReference "google-api-objectivec-client-for-rest" */;
+			productName = GoogleAPIClientForREST_AirQuality;
+		};
+		39E85D6A2CD9A2EC006222FA /* GoogleAPIClientForREST_AlertCenter */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 39C9CF1A2CD990BB00F3D04D /* XCRemoteSwiftPackageReference "google-api-objectivec-client-for-rest" */;
+			productName = GoogleAPIClientForREST_AlertCenter;
+		};
+		39E85D6C2CD9A2EC006222FA /* GoogleAPIClientForREST_Analytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 39C9CF1A2CD990BB00F3D04D /* XCRemoteSwiftPackageReference "google-api-objectivec-client-for-rest" */;
+			productName = GoogleAPIClientForREST_Analytics;
+		};
+		39E85D6E2CD9A2EC006222FA /* GoogleAPIClientForREST_AnalyticsData */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 39C9CF1A2CD990BB00F3D04D /* XCRemoteSwiftPackageReference "google-api-objectivec-client-for-rest" */;
+			productName = GoogleAPIClientForREST_AnalyticsData;
+		};
+		39E85D702CD9A2EC006222FA /* GoogleAPIClientForREST_AnalyticsHub */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 39C9CF1A2CD990BB00F3D04D /* XCRemoteSwiftPackageReference "google-api-objectivec-client-for-rest" */;
+			productName = GoogleAPIClientForREST_AnalyticsHub;
+		};
+		39E85D722CD9A2EC006222FA /* GoogleAPIClientForREST_AnalyticsReporting */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 39C9CF1A2CD990BB00F3D04D /* XCRemoteSwiftPackageReference "google-api-objectivec-client-for-rest" */;
+			productName = GoogleAPIClientForREST_AnalyticsReporting;
+		};
+		39E85D742CD9A2EC006222FA /* GoogleAPIClientForREST_AndroidEnterprise */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 39C9CF1A2CD990BB00F3D04D /* XCRemoteSwiftPackageReference "google-api-objectivec-client-for-rest" */;
+			productName = GoogleAPIClientForREST_AndroidEnterprise;
+		};
+		39E85D762CD9A2EC006222FA /* GoogleAPIClientForREST_AndroidManagement */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 39C9CF1A2CD990BB00F3D04D /* XCRemoteSwiftPackageReference "google-api-objectivec-client-for-rest" */;
+			productName = GoogleAPIClientForREST_AndroidManagement;
+		};
+		39E85D782CD9A2EC006222FA /* GoogleAPIClientForREST_AndroidProvisioningPartner */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 39C9CF1A2CD990BB00F3D04D /* XCRemoteSwiftPackageReference "google-api-objectivec-client-for-rest" */;
+			productName = GoogleAPIClientForREST_AndroidProvisioningPartner;
+		};
+		39E85D7A2CD9A2EC006222FA /* GoogleAPIClientForREST_AndroidPublisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 39C9CF1A2CD990BB00F3D04D /* XCRemoteSwiftPackageReference "google-api-objectivec-client-for-rest" */;
+			productName = GoogleAPIClientForREST_AndroidPublisher;
+		};
+		39E85D7C2CD9A2EC006222FA /* GoogleAPIClientForREST_ApiKeysService */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 39C9CF1A2CD990BB00F3D04D /* XCRemoteSwiftPackageReference "google-api-objectivec-client-for-rest" */;
+			productName = GoogleAPIClientForREST_ApiKeysService;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

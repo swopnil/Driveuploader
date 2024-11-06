@@ -1,65 +1,59 @@
-//
-//  ActionButtonsView.swift
-//  Driveuploader
-//
-//  Created by Swopnil Panday on 11/4/24.
-//
 import SwiftUI
-import PhotosUI
 import UIKit
-import Foundation
+import AVFoundation
+
 struct ActionButtonsView: View {
     @Binding var isImagePickerPresented: Bool
-    @Binding var selectedImage: PhotosPickerItem?
     var driveManager: GoogleDriveManager
-    var onImageSelected: (UIImage) -> Void
+    var folderPath: String
+    
+    @State private var showingPermissionAlert = false
     
     var body: some View {
-        VStack(spacing: 15) {
-            // Camera Button
-            Button(action: { isImagePickerPresented.toggle() }) {
-                HStack {
-                    Image(systemName: "camera.fill")
-                        .font(.title2)
-                    Text("Take Photo")
-                        .fontWeight(.semibold)
+        // Only Camera Button
+        Button(action: { checkCameraPermission() }) {
+            HStack {
+                Image(systemName: "camera.fill")
+                    .font(.title2)
+                Text("Take Photo")
+                    .fontWeight(.semibold)
+            }
+            .frame(maxWidth: .infinity)
+            .padding()
+            .background(Color.blue)
+            .foregroundColor(.white)
+            .cornerRadius(15)
+        }
+        .alert("Camera Permission Required", isPresented: $showingPermissionAlert) {
+            Button("Cancel", role: .cancel) { }
+            Button("Settings") {
+                if let settingsURL = URL(string: UIApplication.openSettingsURLString) {
+                    UIApplication.shared.open(settingsURL)
                 }
-                .frame(maxWidth: .infinity)
-                .padding()
-                .background(Color.blue)
-                .foregroundColor(.white)
-                .cornerRadius(15)
             }
-            
-            // Photo Library Button
-            PhotosPicker(selection: $selectedImage,
-                        matching: .images) {
-                HStack {
-                    Image(systemName: "photo.fill")
-                        .font(.title2)
-                    Text("Choose from Library")
-                        .fontWeight(.semibold)
-                }
-                .frame(maxWidth: .infinity)
-                .padding()
-                .background(Color.green)
-                .foregroundColor(.white)
-                .cornerRadius(15)
-            }
-            .onChange(of: selectedImage) { newValue in
-                handleImageSelection()
-            }
+        } message: {
+            Text("Please allow camera access in Settings to take photos.")
         }
     }
     
-    private func handleImageSelection() {
-        guard let selectedImage = selectedImage else { return }
-        
-        Task {
-            if let data = try? await selectedImage.loadTransferable(type: Data.self),
-               let image = UIImage(data: data) {
-                onImageSelected(image)
+    private func checkCameraPermission() {
+        switch AVCaptureDevice.authorizationStatus(for: .video) {
+        case .authorized:
+            isImagePickerPresented = true
+        case .notDetermined:
+            AVCaptureDevice.requestAccess(for: .video) { granted in
+                DispatchQueue.main.async {
+                    if granted {
+                        isImagePickerPresented = true
+                    } else {
+                        showingPermissionAlert = true
+                    }
+                }
             }
+        case .denied, .restricted:
+            showingPermissionAlert = true
+        @unknown default:
+            showingPermissionAlert = true
         }
     }
 }

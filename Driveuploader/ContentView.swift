@@ -1,9 +1,4 @@
-//
-//  ContentView.swift
-//  Driveuploader
-//
-//  Created by Swopnil Panday on 11/4/24.
-//
+
 
 import SwiftUI
 import GoogleSignIn
@@ -11,18 +6,25 @@ import GoogleAPIClientForREST
 import PhotosUI
 
 struct ContentView: View {
+    
     @StateObject private var driveManager = GoogleDriveManager()
     @State private var selectedCurrency = "1"
     @State private var selectedSide = "front"
     @State private var selectedLocation = "train"
     @State private var isImagePickerPresented = false
-    @State private var selectedImage: PhotosPickerItem? = nil
     @State private var isSignedIn = false
-    @State private var previewImage: UIImage? = nil
-    @State private var showPreview = false
-    @Environment(\.colorScheme) var colorScheme
-    
-    let currencies = ["1", "10", "20", "50", "100"]
+    @StateObject private var uploadQueueManager: UploadQueueManager
+        
+    // Currency management states
+    @State private var currencies = ["1", "10", "20", "50", "100"]
+    @State private var showingAddCurrency = false
+    @State private var newCurrencyValue = ""
+       init() {
+           let driveManager = GoogleDriveManager()
+           _driveManager = StateObject(wrappedValue: driveManager)
+           _uploadQueueManager = StateObject(wrappedValue: UploadQueueManager(driveManager: driveManager))
+       }
+
     let sides = ["front", "back"]
     let locations = ["train", "test"]
     
@@ -44,30 +46,89 @@ struct ContentView: View {
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .padding(.horizontal)
                         
+                        // Folder Stats View
                         FolderStatsView(driveManager: driveManager,
                                       currency: selectedCurrency,
                                       side: selectedSide,
                                       location: selectedLocation)
                         .padding(.horizontal)
                         
-                        // Current Selection Card
-                        PathCard(currency: selectedCurrency,
-                                side: selectedSide,
-                                location: selectedLocation)
-                        .padding(.horizontal)
-                        // Current Selection Card
+                        // Path Card
                         PathCard(currency: selectedCurrency,
                                 side: selectedSide,
                                 location: selectedLocation)
                         .padding(.horizontal)
                         
-                        // Selection Options
-                        SelectionView(selectedCurrency: $selectedCurrency,
-                                    selectedSide: $selectedSide,
-                                    selectedLocation: $selectedLocation,
-                                    currencies: currencies,
-                                    sides: sides,
-                                    locations: locations)
+                  
+                    
+                        
+                        // Selection Options with Add Currency Button
+                        VStack(spacing: 20) {
+                            // Currency Selection with Add Button
+                            VStack(alignment: .leading, spacing: 10) {
+                                HStack {
+                                    Text("Currency")
+                                        .font(.headline)
+                                        .foregroundColor(.gray)
+                                    
+                                    Spacer()
+                                    
+                                    Button(action: {
+                                        showingAddCurrency = true
+                                    }) {
+                                        Label("Add Currency", systemImage: "plus.circle.fill")
+                                            .foregroundColor(.blue)
+                                    }
+                                }
+                                
+                                // Currency options grid
+                                LazyVGrid(columns: [
+                                    GridItem(.adaptive(minimum: 80), spacing: 10)
+                                ], spacing: 10) {
+                                    ForEach(currencies, id: \.self) { currency in
+                                        Button(action: {
+                                            selectedCurrency = currency
+                                            print("Currency changed to: \(currency)")  // Debug print
+                                            // Force folder stats update
+                                            driveManager.getFolderStats(path: "currency/\(currency)/\(currency)\(selectedSide)/\(selectedLocation)")
+                                        }) {
+                                            Text(currency)
+                                                .fontWeight(.medium)
+                                                .frame(maxWidth: .infinity)
+                                                .padding(.vertical, 12)
+                                                .background(
+                                                    RoundedRectangle(cornerRadius: 10)
+                                                        .fill(selectedCurrency == currency ? Color.blue : Color.gray.opacity(0.1))
+                                                )
+                                                .foregroundColor(selectedCurrency == currency ? .white : .primary)
+                                        }
+                                    }
+                                }
+                            }
+                            .padding()
+                            .background(
+                                RoundedRectangle(cornerRadius: 15)
+                                    .fill(Color(.systemBackground))
+                                    .shadow(color: .gray.opacity(0.2), radius: 5)
+                            )
+                            
+                            // Other selection cards with explicit update calls
+                            SelectionCard(title: "Side",
+                                         options: sides,
+                                         selection: $selectedSide)
+                                .onChange(of: selectedSide) { newSide in
+                                    print("Side changed to: \(newSide)")  // Debug print
+                                    driveManager.getFolderStats(path: "currency/\(selectedCurrency)/\(selectedCurrency)\(newSide)/\(selectedLocation)")
+                                }
+                            
+                            SelectionCard(title: "Location",
+                                         options: locations,
+                                         selection: $selectedLocation)
+                                .onChange(of: selectedLocation) { newLocation in
+                                    print("Location changed to: \(newLocation)")  // Debug print
+                                    driveManager.getFolderStats(path: "currency/\(selectedCurrency)/\(selectedCurrency)\(selectedSide)/\(newLocation)")
+                                }
+                        }
                         .padding(.horizontal)
                         
                         // Upload Status (if uploading)
@@ -82,19 +143,20 @@ struct ContentView: View {
                             .padding()
                             .background(
                                 RoundedRectangle(cornerRadius: 15)
-                                    .fill(colorScheme == .dark ? Color.black : Color.white)
+                                    .fill(Color(.systemBackground))
                                     .shadow(color: .gray.opacity(0.2), radius: 5)
                             )
                             .padding(.horizontal)
                         }
                         
                         // Action Buttons
+                        // Fix the spacing (there's an extra space after the colon)
+                        
                         ActionButtonsView(isImagePickerPresented: $isImagePickerPresented,
-                                        selectedImage: $selectedImage,
-                                        driveManager: driveManager) { image in
-                            previewImage = image
-                            showPreview = true
-                        }
+                                         driveManager: driveManager,
+                                         folderPath: "\(selectedCurrency)/\(selectedCurrency)\(selectedSide)/\(selectedLocation)")
+
+
                         .padding(.horizontal)
                     }
                     .padding(.vertical)
@@ -117,28 +179,55 @@ struct ContentView: View {
                         }
                     }
                 }
-                .sheet(isPresented: $showPreview) {
-                    ImagePreviewView(image: previewImage,
-                                   folderPath: "\(selectedCurrency)/\(selectedCurrency)\(selectedSide)/\(selectedLocation)",
-                                   driveManager: driveManager,
-                                   isPresented: $showPreview)
+                .sheet(isPresented: $showingAddCurrency) {
+                    addCurrencySheet
                 }
                 .sheet(isPresented: $isImagePickerPresented) {
-                    CameraView { image in
-                        if let image = image {
-                            previewImage = image
-                            showPreview = true
-                        }
-                        isImagePickerPresented = false
+                        CameraView(
+                            folderPath: "\(selectedCurrency)/\(selectedCurrency)\(selectedSide)/\(selectedLocation)",
+                            queueManager: uploadQueueManager
+                        )
                     }
+
+            }
+        }
+            }
+    
+    // Add Currency Sheet
+    private var addCurrencySheet: some View {
+        NavigationView {
+            Form {
+                Section(header: Text("New Currency")) {
+                    TextField("Currency Value", text: $newCurrencyValue)
+                        .keyboardType(.numberPad)
+                }
+            }
+            .navigationTitle("Add Currency")
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .navigationBarLeading) {
+                    Button("Cancel") {
+                        showingAddCurrency = false
+                    }
+                }
+                
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button("Add") {
+                        if !newCurrencyValue.isEmpty {
+                            withAnimation {
+                                currencies.append(newCurrencyValue)
+                                currencies.sort { Int($0) ?? 0 < Int($1) ?? 0 }
+                                selectedCurrency = newCurrencyValue
+                                // Add this line to create folder structure
+                                driveManager.createCurrencyStructure(currencyValue: newCurrencyValue) { _ in }
+                            }
+                            newCurrencyValue = ""
+                            showingAddCurrency = false
+                        }
+                    }
+                    .disabled(newCurrencyValue.isEmpty)
                 }
             }
         }
-        .alert("Upload Status", isPresented: $driveManager.showAlert) {
-            Button("OK", role: .cancel) { }
-        } message: {
-            Text(driveManager.alertMessage)
-        }
     }
 }
-

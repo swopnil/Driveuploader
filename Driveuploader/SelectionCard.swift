@@ -10,7 +10,6 @@ struct SelectionCard: View {
     let title: String
     let options: [String]
     @Binding var selection: String
-    
     var body: some View {
         VStack(alignment: .leading, spacing: 10) {
             Text(title)

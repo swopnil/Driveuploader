@@ -1,15 +1,13 @@
-//
-//  PathCard.swift
-//  Driveuploader
-//
-//  Created by Swopnil Panday on 11/4/24.
-//
 import SwiftUI
-import Foundation
+
 struct PathCard: View {
     let currency: String
     let side: String
     let location: String
+    
+    var path: String {
+        PathConstructor.getUploadPath(currency: currency, side: side, location: location)
+    }
     
     var body: some View {
         VStack(alignment: .leading, spacing: 10) {
@@ -17,9 +15,11 @@ struct PathCard: View {
                 .font(.headline)
                 .foregroundColor(.gray)
             
-            Text("\(currency)/\(currency)\(side)/\(location)")
+            Text(path)
                 .font(.title3)
                 .bold()
+                .lineLimit(1)
+                .truncationMode(.middle)
         }
         .frame(maxWidth: .infinity, alignment: .leading)
         .padding()
@@ -30,4 +30,3 @@ struct PathCard: View {
         )
     }
 }
-
